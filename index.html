@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas State Roleplay | FiveM</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --tx-blue: #002868;
+            --tx-red: #bf0a30;
+            --tx-white: #ffffff;
+            --tx-dark: #1a1a1a;
+            --tx-gray: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--tx-gray);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            background: var(--tx-blue);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 4px solid var(--tx-red);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ccc;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background: linear-gradient(rgba(0, 40, 104, 0.7), rgba(0, 40, 104, 0.7)), 
+                        url('https://images.unsplash.com/photo-1531210783271-9de3a844a60e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn-primary {
+            background-color: var(--tx-red);
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: var(--tx-white);
+            color: var(--tx-blue);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* --- Features Section --- */
+        .section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--tx-blue);
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: var(--tx-red);
+            margin-bottom: 15px;
+        }
+
+        /* --- Departments --- */
+        .dept-section {
+            background-color: var(--tx-dark);
+            color: white;
+        }
+
+        .dept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .dept-card {
+            border: 1px solid #444;
+            padding: 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .dept-card:hover {
+            background: #2a2a2a;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: var(--tx-blue);
+            color: white;
+            padding: 40px 10%;
+            text-align: center;
+            border-top: 4px solid var(--tx-red);
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--tx-red);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><i class="fas fa-star"></i> TEXAS STATE RP</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#">Rules</a></li>
+            <li><a href="#">Discord</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <h1>Justice, Tradition, Liberty.</h1>
+        <p>Join the most immersive Texas-based roleplay experience in FiveM. High-quality assets, dedicated staff, and a community that feels like home.</p>
+        <div class="btn-group">
+            <a href="fivem://connect/YOUR_IP_HERE" class="btn btn-primary">Join Server</a>
+            <a href="https://discord.gg/YOUR_INVITE" class="btn btn-secondary">Join Discord</a>
+        </div>
+    </header>
+
+    <section class="section" id="about">
+        <h2>Why Texas State RP?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-car"></i>
+                <h3>Custom Fleet</h3>
+                <p>Fully optimized Texas Department of Public Safety and local Sheriff vehicles with 4K liveries.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Serious RP</h3>
+                <p>A mature environment focused on high-quality storytelling and realistic interactions.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-tools"></i>
+                <h3>Active Staff</h3>
+                <p>Professional management team dedicated to ensuring a fair and fun experience for everyone.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section dept-section" id="departments">
+        <h2>Our Departments</h2>
+        <p>Choose your career path in the Lone Star State.</p>
+        <div class="dept-grid">
+            <div class="dept-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>State Troopers</h3>
+                <p>Patrol the highways and enforce state laws.</p>
+            </div>
+            <div class="dept-card">
+                <i class="fas fa-star"></i>
+                <h3>County Sheriff</h3>
+                <p>Protecting the rural heart of Texas.</p>
+            </div>
+            <div class="dept-card">
+                <i class="fas fa-fire-extinguisher"></i>
+                <h3>Texas Fire/EMS</h3>
+                <p>Life-saving services for all citizens.</p>
+            </div>
+            <div class="dept-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Civilian Ops</h3>
+                <p>Business owners, truckers, and everyday Texans.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Texas State Roleplay. All Rights Reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">We are not affiliated with Rockstar Games or Take-Two Interactive.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
