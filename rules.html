@@ -1,1 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules | Texas State Roleplay</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="TXRP.png">
+
+    <!-- Discord/OpenGraph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Texas State Roleplay - Rules">
+    <meta property="og:description" content="Texas State Roleplay's Official Website - Server Rules & Guidelines">
+    <meta property="og:image" content="TXRP.png">
+    <meta name="theme-color" content="#bf0a30">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --tx-blue: #002868;
+            --tx-red: #bf0a30;
+            --tx-white: #ffffff;
+            --tx-dark: #1a1a1a;
+            --tx-gray: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--tx-gray);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            background: var(--tx-blue);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 4px solid var(--tx-red);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ccc;
+        }
+
+        /* --- Rules Header --- */
+        .rules-header {
+            background: linear-gradient(rgba(0, 40, 104, 0.8), rgba(0, 40, 104, 0.8)), 
+                        url('https://images.unsplash.com/photo-1531210783271-9de3a844a60e?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        /* --- Rules Content --- */
+        .rules-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .rule-section {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            border-left: 6px solid var(--tx-blue);
+        }
+
+        .rule-section h2 {
+            color: var(--tx-blue);
+            border-bottom: 2px solid var(--tx-red);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+        }
+
+        .rule-item {
+            margin-bottom: 20px;
+        }
+
+        .rule-item h3 {
+            color: var(--tx-red);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .rule-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .rule-list li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .rule-list li::before {
+            content: "•";
+            color: var(--tx-red);
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+
+        .sub-list {
+            list-style: none;
+            padding-left: 25px;
+            margin-top: 5px;
+            border-left: 2px solid #ddd;
+        }
+
+        .highlight-box {
+            background: #fff5f5;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ffcccc;
+            margin-top: 15px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: var(--tx-blue);
+            color: white;
+            padding: 40px 10%;
+            text-align: center;
+            border-top: 4px solid var(--tx-red);
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--tx-red);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .rule-section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo"><i class="fas fa-star"></i> TEXAS STATE RP</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#departments">Departments</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="https://discord.gg/HgqCvcqjNy" target="_blank">Discord</a></li>
+        </ul>
+    </nav>
+
+    <div class="rules-header">
+        <h1>Server Rules & Regulations</h1>
+        <p>Compliance is mandatory for all citizens within Texas State Roleplay.</p>
+    </div>
+
+    <div class="rules-container">
+        
+        <!-- General Rules -->
+        <section class="rule-section">
+            <h2>General Rules</h2>
+            <div class="rule-item">
+                <ul class="rule-list">
+                    <li><strong>I. Age Requirement:</strong> This is a 16+ server. Anyone found to be underage will be removed immediately until such time as said person(s) is of age.</li>
+                    <li><strong>II. Respect:</strong> Be respectful and have some common sense. We have a ZERO TOLERANCE policy towards discriminatory language, hate speech, slurs, etc. Toxic behaviors are not welcome. This includes Transphobia and Homophobia.</li>
+                    <li><strong>III. NSFW Content:</strong> Gore and other NSFW content is not allowed in public channels. However, what you do in private is your own business.</li>
+                    <li><strong>IV. Advertising:</strong> Please refrain from self-promoting or advertising for another gaming community. Streamers have the role for a reason and poaching city members is not tolerated.</li>
+                    <li><strong>V. Exploiting:</strong> Abusing any system within our discord or in-game mechanics/groups are strictly prohibited.</li>
+                    <li><strong>VI. Hardware:</strong> A Working / Clear microphone is REQUIRED to be in Texas State Roleplay. Excessive feedback from your mic may result in being temporarily removed from the city so the issue may be fixed.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Reports & Bans -->
+        <section class="rule-section">
+            <h2>Reports & Bans</h2>
+            <p>Issues involving other players or staff may be submitted through the ticket system in the Texas State RP discord.</p>
+            <ul class="rule-list" style="margin-top:15px;">
+                <li>If you need help immediately in-game, use the <strong>/report</strong> command.</li>
+                <li>If you need general help, submit a general ticket stating the issue in the #create-a-ticket channel found under Assistance.</li>
+                <li>If you are reporting another player, please submit a compliance ticket.</li>
+            </ul>
+        </section>
+
+        <!-- Punishment Info -->
+        <section class="rule-section">
+            <h2>Punishment Information</h2>
+            <p>Punishments listed below are strictly a guideline for staff members. Different situations will call for different punishment types and lengths.</p>
+            <div class="highlight-box">
+                <ul class="rule-list">
+                    <li><strong>Class A:</strong> 1 day ban & 5 warning points</li>
+                    <li><strong>Class B:</strong> 3 day ban & 10 warning points</li>
+                    <li><strong>Class C:</strong> 7 day ban & 15 warning points</li>
+                    <li><strong>Class D:</strong> 30 day ban & 20 warning points</li>
+                    <li><strong>Class E:</strong> Permanent ban</li>
+                </ul>
+                <p style="margin-top: 10px; font-size: 0.9rem;"><em>* Warning points will be totaled up after each punishment. A total of 100 warning points will earn you a permanent ban. Warning points become void after 6 months.</em></p>
+            </div>
+        </section>
+
+        <!-- In-Game Information -->
+        <section class="rule-section">
+            <h2>In-Game Information</h2>
+            <div class="rule-item">
+                <h3>I. Character Names</h3>
+                <p>Character names need to be somewhat realistic. None of this "Ben Dover" or "Anita Bathe" nonsense.</p>
+            </div>
+
+            <div class="rule-item">
+                <h3>II. Maintain your Roleplay!</h3>
+                <ul class="rule-list">
+                    <li>Breaking character at any point in time will result in an immediate Class A ban. Play out the scenario and report later.</li>
+                    <li>Compensation for lost items requires proof of ownership and loss if rules were broken.</li>
+                    <li>Calling other players out on breaking rules while in-city will result in a ban for all parties. Let staff handle it.</li>
+                </ul>
+            </div>
+
+            <div class="rule-item">
+                <h3>III. /OOC Usage</h3>
+                <p>/ooc is strictly for reporting actively occurring in-game issues. It is NOT a space for chatting. Take it to discord.</p>
+            </div>
+
+            <div class="rule-item">
+                <h3>IV. Server Restarts / Storms</h3>
+                <ul class="rule-list">
+                    <li>Roleplay should continue as normal before and after a restart.</li>
+                    <li><strong>MANDATORY RETURN:</strong> If you are in a scene (e.g., being arrested) when a storm hits, you must return to finish it. Evading via restart will result in a ban.</li>
+                </ul>
+            </div>
+
+            <div class="rule-item">
+                <h3>V. Loot Boxing / RDM / VDM</h3>
+                <p>Randomly attacking or killing players to take loot with little roleplay reasoning is prohibited. You cannot run up and stab/run someone over just to pocket wipe them.</p>
+            </div>
+
+            <div class="rule-item">
+                <h3>VI. Metagaming</h3>
+                <p>Utilizing information your character did not learn in-game to shape roleplay is prohibited. Immediate ban.</p>
+            </div>
+
+            <div class="rule-item">
+                <h3>VII. Powergaming / Fail RP</h3>
+                <p>Gaining an unfair advantage using mechanics that leave others no option but to lose.</p>
+                <ul class="rule-list">
+                    <li>Talking/calling locations while downed (groaning for pain is allowed).</li>
+                    <li>Using mechanical knowledge your character hasn't learned through RP.</li>
+                </ul>
+            </div>
+
+            <div class="rule-item">
+                <h3>VIII. New Life Rule (NLR)</h3>
+                <p>A "new life" begins when you bleed out or are body dumped. Your character forgets events leading to that death. You may not return to an ongoing scenario you died in.</p>
+            </div>
+
+            <div class="rule-item">
+                <h3>IX. Value of Life (NVL)</h3>
+                <p>Treat your character's life as your own. Not fearing for your life (e.g., ignoring 2 guns pointed at you) is prohibited.</p>
+            </div>
+
+            <div class="rule-item">
+                <h3>X. Criminal Activities</h3>
+                <ul class="rule-list">
+                    <li><strong>Group Limit:</strong> Crimes are limited to a max of 8 people (including lookouts/radio comms).</li>
+                    <li><strong>Prison Breaks:</strong> Not allowed until the transport has actually begun. Breaks must be well-planned.</li>
+                    <li><strong>Public Servants:</strong> On-duty Police and EMS cannot be robbed/kidnapped unless there are at least 4 PD and 3 EMS on duty.</li>
+                    <li><strong>Emergency Vehicles:</strong> Stolen emergency vehicles are prohibited unless for emergency transport.</li>
+                    <li><strong>Green Zones:</strong> No crimes in Clothing Stores, Barber Shops, or Ocean Medical (except Pharmacy).</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box" style="background: #eef2f7; border-color: #d1d9e6;">
+                <strong>EXTRA INFO:</strong> Gang clothing/colors make you a target for gang-related assumptions. Choose your look wisely.
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Texas State Roleplay. All Rights Reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">We are not affiliated with Rockstar Games or Take-Two Interactive.</p>
+        <div class="social-links" style="margin-top: 20px;">
+            <a href="https://discord.gg/HgqCvcqjNy" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://www.youtube.com/channel/UC5nREl9c0u5QPX2QKK-u2-g" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
